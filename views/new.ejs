@@ -1,0 +1,17 @@
+<%- include('partials/header')  %> 
+<h1>Add Post</h1>
+<div class="row">
+    <form action="/blogs" method="post">
+    <div class="input-field col s12">
+      <input name="title" type="text" placeholder="title">
+    </div>
+    <div class="input-field col s12">
+        <input name="url" type="text" placeholder="image url">
+    </div>
+    <div class="input-field col s12">
+        <textarea name="body" class="materialize-textarea"></textarea>
+      </div>
+      <button type="submit" class="waves-effect waves-light btn">Submit</button>
+    </form>
+  </div>
+<%- include('partials/footer')  %> 

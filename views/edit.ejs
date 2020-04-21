@@ -1,0 +1,17 @@
+<%- include('partials/header')  %> 
+<h1>Edit Post</h1>
+<form action="/blogs/<%=blog._id %>?_method=PUT" method="post">
+    <div class="row">
+        <div class="input-field col s12">
+        <input name="title" type="text" value="<%=blog.title %>">
+        </div>
+        <div class="input-field col s12">
+            <input name="url" type="text" value="<%=blog.url  %>">
+        </div>
+        <div class="input-field col s12">
+            <textarea name="body" class="materialize-textarea"><%=blog.body  %></textarea>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn">Edit Post</button>
+    </div>
+</form>
+<%- include('partials/footer')  %> 
